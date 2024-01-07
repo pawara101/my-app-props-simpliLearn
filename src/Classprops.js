@@ -5,7 +5,9 @@ export class Classprops extends Component {
     return (
       <div>
         <h1>Hello {this.props.name} Welcome to test Component.....</h1>
+        <p>{this.props.children}</p>
       </div>
+      
     )
   }
 }
