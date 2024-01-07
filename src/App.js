@@ -1,21 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import './Classprops.js';
-import Classprops from './Classprops.js';
-import Functionprops from './Functionprops.js';
+import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
+import NewComp from "./Components/NewComp";
 
-function App() {
-  return (
+class App extends React.Component {
+  styles = {
+    fontStyle: "bold",
+    color: "teal"
+  };
+  render() {
+    return (
     <div className="App">
-      <Classprops name="Leraner 1"><p>child Component</p>
-      </Classprops>
-      <Classprops name="James">
-        <button type="button">Click</button>
-      </Classprops>
-
-      <Functionprops name="Learner4"></Functionprops>
+      <h1 style={this.styles}>Welcome</h1>
+      <NewComp></NewComp>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
