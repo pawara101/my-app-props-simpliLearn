@@ -8,6 +8,9 @@ import {ClassComponent,ClassComponent1} from "./Components/ClassComp";
 
 import Click from "./Components/Click";
 import Counter from "./Components/Counter";
+
+import ParentCompt from "./Components/ParentCompt";
+
 function App() {
   return <div>
     <h1>Hello tutorial</h1>
@@ -17,6 +20,8 @@ function App() {
     <ClassComponent1></ClassComponent1>
     <Click></Click>
     <Counter></Counter>
+
+    <ParentCompt></ParentCompt>
   </div>
 
   
